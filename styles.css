@@ -1,8 +1,17 @@
 * {
+  box-sizing: border-box;
   padding: 0;
   margin: 0;
-  box-sizing: border-box;
 }
+
+:root {
+  --color: #8698a7;
+  --background: #78accd;
+  --orange: #de6e46;
+  --purple: #ae5989;
+  --fade: #e4e5e5;
+}
+
 body {
   background-color: #78accd;
 }
@@ -10,14 +19,90 @@ body {
 main {
   width: 24rem;
   height: 24rem;
-  background: white;
+  background-color: white;
   margin: auto;
   margin-top: 5rem;
 }
+
 header {
   padding: 1rem 1.8rem 1rem;
   color: #8698a7;
   display: flex;
   justify-content: space-between;
   border-bottom: 1px solid #8698a7;
+}
+
+.fade {
+  color: var(--color);
+  font-weight: 600;
+  font-size: small;
+}
+
+.fades {
+  color: var(--fade);
+}
+
+.dates {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  padding: 1rem 0rem 1.7rem 1.7rem;
+  gap: 1rem;
+  row-gap: 1rem;
+  border-bottom: 1px solid var(--color);
+}
+
+footer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5rem;
+  padding: 1rem;
+  padding-right: 0rem;
+  padding-left: 1.7rem;
+}
+
+.plus {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2rem;
+  height: 2rem;
+  border: 2px solid #de6e46;
+  border-radius: 50%;
+  font-weight: 900;
+  margin-top: 0;
+}
+
+.ups {
+  position: absolute;
+  font-size: 13px;
+  background-color: #de6e46;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 1.4rem;
+  /* right: -0.0rem; */
+  left: 1.4rem;
+}
+
+.plu {
+  position: relative;
+}
+
+.orange {
+  background-color: #de6e46;
+  color: white;
+  border: none;
+  font-size: 16px;
+}
+
+.purple {
+  border-color: #ae5989;
+}
+
+.purple2 {
+  background-color: #ae5989;
 }
