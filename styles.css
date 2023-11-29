@@ -3,3 +3,21 @@
   margin: 0;
   box-sizing: border-box;
 }
+body {
+  background-color: #78accd;
+}
+
+main {
+  width: 24rem;
+  height: 24rem;
+  background: white;
+  margin: auto;
+  margin-top: 5rem;
+}
+header {
+  padding: 1rem 1.8rem 1rem;
+  color: #8698a7;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #8698a7;
+}
